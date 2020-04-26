@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+{% block title %}{{section.title}}{% endblock title %}
+{% block content %}
+    <div class="ui-container">
+        <h2 class="title is-4">{{section.title}}</h2>
+        <div class="columns">
+        {% for post in section.pages %}
+            <div class="column is-one-third">
+                <a href="{{ post.permalink }}" class="link">
+                    <div class="ui-card">
+                        <p class="body"> <span class="title">{{ post.title }}</span><br>{{ post.description }}</p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
