@@ -2,9 +2,30 @@
 {% block title %}{{section.title}}{% endblock title %}
 {% block content %}
     <div class="ui-container">
-        <div class="container is-fluid">
-            <div class="content">
-            {{section.content | safe}}
+        <div class="section">
+            <p id="pitch">
+            Escanor is an open-source redis protocol compatible in memory database that persist o disk.
+            Key Value model with support for String, Integers, Geo Spatial and Json.
+            </p>
+        </div>
+        <div class="section">
+            <div class="columns">
+                <div class="column is-half info-tile">
+                    <h1 class="title is-4">Download</h1>
+                    <p>
+                    Download the lastest binary release of escanor database. this project is in early alpha and its not ready for production environment
+                    </p>
+                    <button class="button is-primary">Download</button>
+                </div>
+                <div class="column is-half info-tile">
+                    <h1 class="title is-4">Source Code</h1>
+                    <p>
+                    Check the source code on github and give this project some stars
+                    </p>
+                    <button class="button">
+                    <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

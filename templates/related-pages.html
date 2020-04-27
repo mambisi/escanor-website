@@ -1,0 +1,8 @@
+
+{% set section = get_section(path="commands/_index.md") %}
+Related Commands
+<ul>
+{%for page in  section.pages | filter(attribute = "extra.type", value = page_type)%}
+    <li> <a href="{{page.permalink}}">{{page.title}}</a></li>
+{% endfor%}
+ </ul>

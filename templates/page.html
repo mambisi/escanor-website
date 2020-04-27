@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{page.title}}{% endblock title %}
+{% block content %}
+    <div class="ui-container">
+        <div class="columns">
+            <div class="column">
+                <div class="section">
+                    <div class="content">
+                    {{page.content | safe}}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-one-third">
+                <div class="section">
+                    <div class="columns">
+                        <div class="divider is-vertical"></div>
+                        <div class="column content">
+                            {% set page_type = page.extra["type"]%}
+                            {% include "related-pages.html" %}
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        
+        </> 
+    </div>
+{% endblock content %}

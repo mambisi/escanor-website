@@ -1,0 +1,5 @@
+<ul>
+{% for relation in related[pageType] %}
+<li> <a href="{{relation.url}}">{{relation.name}}</a></li>
+{% endfor %}
+</ul>
