@@ -5,13 +5,13 @@
                 <img class="ui-image" src="{{get_url(path="img/logo-dark.png")}}" alt="Escanor">
             </a>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             </a>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-menu" id="navMenu">
             <!-- hidden on mobile -->
             <div class="navbar-start">
                 <!-- navbar items -->
@@ -21,8 +21,6 @@
                 <a href="/commands" class="navbar-item">Commands</a>
             </div>
         </div>
-        <div class="navbar-menu is-active">
-            <a href="/commands" class="navbar-item">Commands</a>
-        </div>
+       
     </div>
 </nav>
