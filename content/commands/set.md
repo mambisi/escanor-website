@@ -18,6 +18,11 @@ Set a value to key. if key already holds a value its overwritten.
 Returns **OK** if set was successful.
 
 #### Examples
-```escanor
-SET name kofi
+``` repl
+> SET name kofi
+"Ok"
+> GET name
+"kofi"
+> SET verfication.code "330732" EX 60
+"Ok"
 ```

@@ -9,7 +9,7 @@ contexts:
   main:
     # Strings begin and end with quotes, and use backslashes as an escape
     # character
-    - match: '`'
+    - match: \b(")
       scope: punctuation.definition.string.begin.esca
       push: double_quoted_string
 
@@ -34,7 +34,7 @@ contexts:
     - meta_scope: string.quoted.double.esca
     - match: '\\.'
       scope: constant.character.escape.esca
-    - match: '`'
+    - match: '\b(")'
       scope: punctuation.definition.string.end.esca
       pop: true
 
